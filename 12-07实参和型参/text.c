@@ -1,5 +1,5 @@
 #include <stdio.h>
-//int is_year( int y)
+//int is_year( int y)//åˆ¤æ–­æ˜¯ä¸æ˜¯é—°å¹´
 //{
 //	
 //	if (((y % 4 == 0) && y % 100 != 0) || (y % 400 == 0))
@@ -10,24 +10,31 @@
 //int main()
 //{
 //	int y;
-//	    printf("ÇëÊäÈëÄê·İ:");
+//	    printf("è¯·è¾“å…¥å¹´ä»½:");
 //		scanf_s("%d", &y);
 //		if (is_year( y))
-//			printf("%dÊÇÈòÄê\n", y);
+//			printf("%dæ˜¯é—°å¹´\n", y);
 //		else
-//			printf("%d²»ÊÇÈòÄê\n", y);
+//			printf("%dä¸æ˜¯é—°å¹´\n", y);
 //return 0;
 //}     
 
-//int bit(int arr[], int len, int key)//ÓÃº¯ÊıĞ´µÄ¶ş·Ö·¨
+
+
+
+
+
+
+
+//int bit(int arr[], int len, int key)//ç”¨å‡½æ•°å†™çš„äºŒåˆ†æ³•
 //{
 //	int left=0;
 //	int right = len - 1;
 //	int mid = 0;
-//	while (left <= right)
+//	while (left <= right)//è¿™ä¸ªæ¡ä»¶ä¿è¯äº†åœ¨æ•°ç»„ä¸­è¿˜æœ‰å¾…æœç´¢çš„å…ƒç´ æ—¶ç»§ç»­æ‰§è¡Œ
 //	{
 //		mid = left + (right - left) / 2;
-//		if (arr[mid] < key)
+//		if (arr[mid] < key)//è¦æ‰¾çš„æ•°åœ¨[mid]çš„å³è¾¹
 //		{
 //			left = mid + 1;
 //		}
@@ -36,7 +43,7 @@
 //		{
 //				return mid;
 //		}
-//		else 
+//		else //è¦æ‰¾çš„æ•°åœ¨[mid]çš„å·¦è¾¹
 //		{
 //			right = mid - 1;
 //		}
@@ -51,23 +58,23 @@
 //	int ret = bit(arr, len, 3);
 //	if (ret != -1)
 //	{
-//		printf("ÒªÕÒµÄÊıÊÇ£º%d\n", arr[ret]);
-//		printf("Êı×éÏÂ±êÊÇ£»%d\n", ret);
+//		printf("è¦æ‰¾çš„æ•°æ˜¯ï¼š%d\n", arr[ret]);
+//		printf("æ•°ç»„ä¸‹æ ‡æ˜¯ï¼›%d\n", ret);
 //	}
 //	else {
-//		printf("Ã»ÓĞÕÒµ½");
+//		printf("æ²¡æœ‰æ‰¾åˆ°");
 //	}
 //return 0;
 //}
 
-//void Init(int arr[], int len)//ÊµÏÖº¯Êıinit() ³õÊ¼»¯Êı×éÎªÈ«0
+//void Init(int arr[], int len)//å®ç°å‡½æ•°init() åˆå§‹åŒ–æ•°ç»„ä¸ºå…¨0
 //{
 //	for (int i = 0; i < len; i++)
 //	{
 //		arr[i] = i + 1;
 //	}
 //}
-//int print(int arr[], int len)//ÊµÏÖprint()  ´òÓ¡Êı×éµÄÃ¿¸öÔªËØ
+//int print(int arr[], int len)//å®ç°print()  æ‰“å°æ•°ç»„çš„æ¯ä¸ªå…ƒç´ 
 //{
 //	for (int i = 0; i < len; i++)
 //	{
@@ -75,7 +82,7 @@
 //	}
 //	printf("\n");
 //}
-//void Reverse(int arr[], int len)//ÊµÏÖreverse()  º¯ÊıÍê³ÉÊı×éÔªËØµÄÄæÖÃ¡£
+//void Reverse(int arr[], int len)//å®ç°reverse()  å‡½æ•°å®Œæˆæ•°ç»„å…ƒç´ çš„é€†ç½®ã€‚
 //{
 //	int left=0;
 //	int right = len - 1;
@@ -101,7 +108,12 @@
 //    return 0;
 //}
 
-//int is_prime(int num)º¯Êıis_prime£¬ÅĞ¶ÏÒ»¸öÊıÊÇ²»ÊÇËØÊı
+
+
+
+
+
+//int is_prime(int num)å‡½æ•°is_primeï¼Œåˆ¤æ–­ä¸€ä¸ªæ•°æ˜¯ä¸æ˜¯ç´ æ•°
 //{
 //	if (num < 2) 
 //	{
@@ -118,7 +130,7 @@
 //int main()
 //{
 //	int num=0;
-//	printf("100-200µÄËØÊı:%d", num);
+//	printf("100-200çš„ç´ æ•°:%d", num);
 //	for (int num = 100; num < 201; num++)
 //	{
 //		if (is_prime(num)) 
@@ -129,7 +141,7 @@
 //	return 0;
 //}
 
-//int scb(int num )//ÊµÏÖÒ»¸öº¯Êı£¬´òÓ¡³Ë·¨¿Ú¾÷±í
+//int scb(int num )//å®ç°ä¸€ä¸ªå‡½æ•°ï¼Œæ‰“å°ä¹˜æ³•å£è¯€è¡¨
 //{
 //	for (int i = 1; i <= num; i++)
 //	{
@@ -144,16 +156,16 @@
 //int main()
 //{
 //	int i;
-//	printf("ÇëÊäÈëĞĞÁĞÊı:");
+//	printf("è¯·è¾“å…¥è¡Œåˆ—æ•°:");
 //	scanf_s("%d",&i);
 //	printf("\n");
 //	scb(i);
 //	return 0;
 //}
 
-//int main() //¡¾Ò»Î¬Êı×é¡¿BC92 - ÄæĞòÊä³ö
+//int main() //ã€ä¸€ç»´æ•°ç»„ã€‘BC92 - é€†åºè¾“å‡º
 //{
-//    printf("ÇëÊäÈë10¸öÊı:\n");
+//    printf("è¯·è¾“å…¥10ä¸ªæ•°:\n");
 //    int arr[10] = { 0 };
 //    for (int i = 0; i < 10; i++)
 //    {
@@ -170,7 +182,7 @@
 //            left++;
 //            right--;
 //     }
-//     printf("ÄæĞòÊÇ:");
+//     printf("é€†åºæ˜¯:");
 //     for (int i = 0; i <10; i++)
 //     {
 //         printf("%d ", arr[i]);
